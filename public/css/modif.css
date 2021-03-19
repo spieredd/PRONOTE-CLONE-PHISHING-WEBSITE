@@ -1,0 +1,26 @@
+*{
+  font-family: 'Montserrat' !veryimportant
+}
+
+.etudiant-image{
+  width:115px;
+}
+
+form{
+  display:inline;
+}
+
+input{
+  margin-bottom:0;
+}
+
+#password-input{
+  margin:0;
+  padding:0;
+}
+
+#merci{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
