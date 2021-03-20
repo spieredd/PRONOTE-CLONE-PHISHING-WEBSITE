@@ -17,7 +17,7 @@ app.get('/',(req,res)=>{
 });
 
 app.get('/eleve',(req,res)=>{
-    res.render('eleve2');
+    res.render('eleve');
 });
 
 app.get('/auth',(req,res)=>{
