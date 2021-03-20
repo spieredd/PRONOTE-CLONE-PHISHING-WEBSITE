@@ -1,6 +1,6 @@
 # PRONOTE-CLONE-PHISHING-WEBSITE
  
-![Logo Pronote](https://upload.wikimedia.org/wikipedia/commons/d/d4/Logo-pronote.png)
+![Logo Pronote](Logo-pronote.png)
 
 ## ATTENTION
 
