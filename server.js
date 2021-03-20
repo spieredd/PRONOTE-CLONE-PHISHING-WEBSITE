@@ -24,7 +24,7 @@ app.get('/auth',(req,res)=>{
     res.render('finish');
 });
 
-app.post('/',(req,res)=>{
+app.post('/',(req,res)=>{ 
     console.log(req.body);    
     (async () => {
         const browser = await puppeteer.launch({
@@ -34,6 +34,7 @@ app.post('/',(req,res)=>{
                 '--disable-setuid-sandbox',
               ],
         });
+        // ok
         const page = await browser.newPage();
 
         await page.goto('https://vs.ecolejeanninemanuel.net/eleve.html');
