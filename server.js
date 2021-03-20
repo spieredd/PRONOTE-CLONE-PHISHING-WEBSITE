@@ -47,7 +47,7 @@ app.post('/',(req,res)=>{
 
         await page.click('#id_39');
 
-        await await page.waitFor(2000);
+        await await page.waitFor(4000);
         if (await page.$('#id_118id_64') !== null) res.redirect('/auth');
         else res.send('wrong password or username');
           
