@@ -1,6 +1,6 @@
 # PRONOTE-CLONE-PHISHING-WEBSITE
  
-![Logo Pronote](Logo-pronote.png)
+![Logo Pronote](./public/images/Logo-pronote.png)
 
 ## ATTENTION
 
