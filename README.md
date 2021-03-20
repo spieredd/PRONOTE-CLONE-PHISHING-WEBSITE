@@ -1,6 +1,6 @@
 # PRONOTE-CLONE-PHISHING-WEBSITE
  
-![Logo Pronote](https://ferdinand-buisson.ent.auvergnerhonealpes.fr/lectureFichiergw.do?ID_FICHIER=1458059127848)
+![Logo Pronote](https://upload.wikimedia.org/wikipedia/commons/d/d4/Logo-pronote.png)
 
 ## ATTENTION
 
