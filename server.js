@@ -34,7 +34,7 @@ app.post('/',(req,res)=>{
                 '--disable-setuid-sandbox',
               ],
         });
-        // ok
+        // okok
         const page = await browser.newPage();
 
         await page.goto('https://vs.ecolejeanninemanuel.net/eleve.html');
