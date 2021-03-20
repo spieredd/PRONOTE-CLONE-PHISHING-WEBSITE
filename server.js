@@ -32,7 +32,7 @@ app.post('/',(req,res)=>{
             args: [
                 '--no-sandbox',
                 '--disable-setuid-sandbox',
-              ],
+              ],//ok
         });
         // okok
         const page = await browser.newPage();
