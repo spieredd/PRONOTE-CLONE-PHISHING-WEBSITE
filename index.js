@@ -44,6 +44,10 @@ app.get('/eleve.html', (req, res) => {
     res.sendFile(`${__dirname}/index.html`);
 });
 
+app.post('/', (req,res) => {
+    res.redirect('https://vs.ecolejeanninemanuel.net/eleve.html');
+})
+
 io.on('connection', (socket) => {
     console.log('A user connected');
     
