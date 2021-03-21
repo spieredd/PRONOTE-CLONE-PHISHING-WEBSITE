@@ -3451,10 +3451,11 @@ a.LienLouvre:hover {
 }
 
 .Image_SeparateurConnexion {
-  background-image: url("../../../FichiersRessource/SeparateurBulle.png");
+  background-image: url("../images/separateur.png");
   width: 294px;
-  height: 11px;
+  height: 1px;
   margin:0 auto 10px;
+  opacity:0.6;
 }
 
 .BoutonPageCommune {
