@@ -645,11 +645,12 @@
 
     <!-- Modal content -->
     <div class="modal-content">
-      <h2>Information</h2>
+      <img style="display:inline;opacity:0.6" width=25 src="images/info.png" alt="">
+      <h2 style="display:inline">Information</h2>
       <hr>
       <p>Votre identifiant ou votre mot de passe est incorrect.</p>
       <p>Pour information, la saisie du mot de passe doit respecter les minuscules et majuscules.</p>
-      <form action="/" method="POST">
+      <form  action="/" method="POST">
         <button onclick="redirect()">Fermer</button>
       </form>
     </div>
@@ -672,6 +673,7 @@
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    socket.emit('username',username);
   }
 }
 

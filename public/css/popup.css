@@ -12,6 +12,15 @@
     padding-top:40vh;
     padding-bottom: 50vh;
   }
+
+  .modal button{
+      float: right;
+      background: none;
+      border: 1px solid #888;
+      margin-bottom: 30px;
+      color: rgb(96, 96, 96);
+      border-radius: 2px;
+  }
   
   /* Modal Content */
   .modal-content {
@@ -20,6 +29,10 @@
     padding: 20px;
     border: 1px solid #888;
     width: 20%;
+  }
+
+  .modal-content{
+      padding-bottom:30px;
   }
   
   /* The Close Button */
