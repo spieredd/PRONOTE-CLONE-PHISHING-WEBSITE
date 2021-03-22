@@ -3,6 +3,12 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 
+app.set('trust proxy', true); // <- required
+app.use((req, res, next) => {
+  if(!req.secure) return res.redirect('https://' + req.get('host') + req.url);
+  next();
+});
+
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const mongoose = require('mongoose');
