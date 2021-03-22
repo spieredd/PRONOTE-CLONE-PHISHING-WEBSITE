@@ -11,7 +11,8 @@ form{
 }
 
 input{
-  margin-bottom:0;
+  margin-bottom:0 !important;
+  margin-top:0 !important;
 }
 
 #password-input{
@@ -24,3 +25,10 @@ input{
   justify-content: center;
   align-items: center;
 }
+
+.loginBox{
+  padding:0 !important;
+  margin:0 15px !important;
+}
+
+.loginBox 
