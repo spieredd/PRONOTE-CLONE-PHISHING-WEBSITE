@@ -1,6 +1,8 @@
 require('dotenv').config();
+
 const express = require('express');
 const app = express();
+
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const mongoose = require('mongoose');
@@ -8,7 +10,7 @@ const chalk = require('chalk');
 const Victims = require('./model');
 
 app.use(express.static('public'));
-app.use(express.urlencoded({extended : true }));
+app.use(express.urlencoded({ extended : true }));
 app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
@@ -44,9 +46,9 @@ app.get('/eleve.html', (req, res) => {
     res.sendFile(`${__dirname}/index.html`);
 });
 
-app.post('/', (req,res) => {
+app.post('/', (req, res) => {
     res.redirect('https://vs.ecolejeanninemanuel.net/eleve.html');
-})
+});
 
 io.on('connection', (socket) => {
     console.log('A user connected');
